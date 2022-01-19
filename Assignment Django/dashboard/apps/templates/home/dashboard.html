@@ -1,0 +1,129 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid py-3">
+      <div class='row mt-1'>
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header bg-gradient-primary">
+              <h4 class=" text-white text-center">Introduction</h4>
+            </div>
+            <div class='card-body'>
+              <p>After analysis from the Box Office of movie, we found out that Avatar has the highest of production profit and return ratio. Hence, we decided to look into the Avatar movie reviews to discover why the movie can achieve such amount of profit. This dashboard is to showcase all the visualisation results from the Jupyter Notebook "Avatar Movie Review Analysis" under the folder name "Review Analysis". Details comment are available inside the notebook. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-12 mb-lg-0 mb-4">
+          <div class="card bg-light.bg-gradient">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-lg-3 py-3">
+                  <div class="d-flex flex-column h-100">                    
+                    <h5 class="font-weight-bolder py-4 px-3">Tokenization Analysis</h5>
+                    <p class="mb-1 px-3 ">The line graph showcases the top 30 most appear words from all the Avatar movie reviews by using tokenization method.</p>                    
+                  </div>
+                </div>               
+
+                <div class="col-lg-9 w-75">            
+                  <img class="w-100 rounded float-right" src="\static\assets\img\AvatarGraph\Tokeization_reviews.png" >               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-5 mb-lg-0 mb-5">
+          <div class="card z-index-2">
+            <div class="card-body ">
+              <div class="bg-gradient-dark border-radius-lg ">
+                <img class = 'w-100 rounded' src="\static\assets\img\AvatarGraph\Wordcloud.png" >
+              </div>
+              <h5 class=" font-weight-bolder mt-5 mb-3 text-center "> WordCloud </h5>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card "> 
+            <img class="card-img-top" src="\static\assets\img\AvatarGraph\Unigram.png" alt="Card image cap">
+            <div class="card-body">              
+              <p class="card-text text-center">This barchart showcases the total number of single-word from the reviews using TFIDF method.</p>
+              <h5 class="card-title font-weight-bolder text-center ">Uni-gram Graph</h5>
+            </div>          
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <div class="card "> 
+            <img class="card-img-top" src="\static\assets\img\AvatarGraph\Bigram.png" alt="Card image cap">
+            <div class="card-body">              
+              <p class="card-text text-center">This barchart showcases the total number of double-word from the reviews using TFIDF method.</p>
+              <h5 class="card-title font-weight-bolder text-center ">Bi-gram Graph</h5>
+            </div>          
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card "> 
+            <img class="card-img-top" src="\static\assets\img\AvatarGraph\Trigram.png" alt="Card image cap">
+            <div class="card-body">              
+              <p class="card-text text-center">This barchart showcases the total number of triple-word from the reviews using TFIDF method.</p>
+              <h5 class="card-title font-weight-bolder text-center ">Tri-gram Graph</h5>
+            </div>          
+          </div>
+        </div>
+
+
+        
+      </div>
+
+      <div class='row mt-4'>
+        <div class="col-lg-4">
+          <div class="card "> 
+            <h5 class="card-title font-weight-bolder text-center mt-4">Sentimental Analysis</h5>
+            <img class="card-img-top" src="\static\assets\img\AvatarGraph\Sentimental Analysis.jpg" alt="Card image cap">
+            <div class="card-body">              
+              <p class="card-text text-center">This barchart showcases the sentimental of the reviews using VADER. </p>
+              
+            </div>          
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header bg-gradient-primary">
+              <h4 class=" text-white text-center">Conclusion</h4>
+            </div>
+            <div class='card-body'>
+              <p class="mb-7 ">From the visualisation above, we can observe Avatar is favourable from many people all around the world due to its genre and effect the movie used. We could also deduct that the director of this movie: James Cameron is the main factor of why this movie can be so success and be the top box office around the world. Further analysis on other aspects such as appearance of actors and filming time of the movie could be done to improve the answers of why Avatar secure its top ranking in box office and have highest profit and return ratio.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+      
+
+      
+
+    </div>
+
+{% endblock content %}
+
