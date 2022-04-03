@@ -1,9 +1,8 @@
 <h1 align='center'>Box Office and Movie Review Analysis</h1>
 
 ## Introduction 
-This is an Assignment from Forward School: **Box Office and Movie Review Analysis from Worldwide**
 
-This repository is a project to carry out the analysis of box office from the worldwide and then, lead to the analysis of movie review to investigate why the movie is favourable by many people and achieve the highest box office of all time. The results of this analysis will be showcased in a Django dashboard. There are 2 contributors for this repository: Zac and Jason from ADS 2021 Dec Cohurt. 
+This repository is a project to carry out the analysis of box office from the worldwide and then, lead to the analysis of movie review to investigate why the movie is favourable by many people and achieve the highest box office of all time. The results of this analysis will be showcased in a Django dashboard. There are 2 contributors for this repository: Zac and Jason. 
 
 This project cover 2 parts, which is Web Scrapping and Deployment Data Visualisation into Django
 
